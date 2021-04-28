@@ -1,0 +1,427 @@
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.bg-box1{
+    width: 600px;
+    height: 870px;
+    position: absolute;
+    background-color: hsl(264, 100%, 61%);
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    z-index: -1;
+    left: -110px;
+    top: -10px;
+    border-radius: 0 0 300px 300px;
+}
+
+.bg-box2{
+    width: 350px;
+    height: 800px;
+    position: absolute;
+    background-color: hsl(273, 53%, 97%);
+    z-index: -1;
+    right: 0;
+    top: 170px;
+    border-radius: 300px 0 0 0;
+}
+
+.mcontainer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 50%;
+}
+
+.container2{
+
+    width: 50%;
+
+    margin-left: 20px;
+    margin-top: 320px;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+
+.heading-parag{
+    font-size: 25px;
+    line-height: 40px;
+    width: 690px;
+    color: hsl(270, 7%, 64%);
+}
+
+.container{
+    box-shadow: 1px 1px 30px #e2e2e2;
+    
+    margin-left: 400px;
+    margin-top: 150px;
+    
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 40px;
+    border: 12px solid rgb(255, 255, 255);
+    width: 310px;
+    height: 630px;
+}
+
+.top-container{
+    border-radius: 30px 30px 10px 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(264, 100%, 61%);
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.notch {
+    /* position: fixed;
+    top: 170px;
+    left: 30%; */
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 15px 15px;
+    transform: translateX(-50%);
+
+    margin-left: 155px;
+    margin-right: -15px;
+
+    flex: 100%;
+}
+
+.top-arrow{
+    flex: 5%;
+    text-align: right;
+    padding: 10px 0 0 10px;
+}
+
+.top-img{
+    flex: 20%;
+    text-align: center;
+}
+
+.top-name{
+    flex: 50%;
+    padding-left: 10px;
+    line-height: 15px;
+}
+
+.name{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.status{
+    font-size: 10px;
+    color: hsl(276, 100%, 81%);
+}
+
+.threedot{
+    flex: 15%;
+    text-align: center;
+}
+
+.arrowleft {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+  
+.avatarimg{
+    border-radius: 100%;
+    width: 35px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.threedot:after {
+    content: '\2807';
+    font-size: 20px;
+}
+
+.msg{
+    border-radius: 13px 13px 13px 5px;
+    margin: 10px 50px 0 10px;
+    background-color: rgba(237,229,243,255);
+    color: hsl(276, 55%, 52%);
+    font-size: 10px;
+    float:left;
+}
+
+.firstmsg{
+    width: 120px;
+    padding: 10px 40px 10px 10px;
+}
+
+.secondmsg{
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.thirdmsg{
+    width: 140px;
+    padding: 10px 20px 10px 10px;
+}
+
+.reply{
+    border-radius: 13px 13px 5px 13px;
+    background-color: #fff;
+    color: hsl(0, 0%, 0%);
+    font-size: 10px;
+    float: right;
+
+    box-shadow: 1px 1px 10px #cecece;
+}
+
+.firstreply{
+    width: 140px;
+    padding: 10px 20px 10px 10px;
+    margin: 5px 10px 0 50px;
+}
+
+.secondreply{
+    margin: 10px 10px 0 50px;
+    width: 90px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.reply-dogs{
+    margin: 10px 10px 0 50px;
+    float: right;
+}
+
+.dogimg{
+    width: 55px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.price1{
+    border-radius: 13px 13px 13px 5px;
+    margin: 10px 50px 0 10px;
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    width: 190px;
+    top: 50%;
+}
+
+/* The container */
+.time1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    transform: translateY(30%);
+  }
+  
+  /* Hide the browser's default radio button */
+  .time1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    transform: translateY(-20%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: transparent;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .time1:hover input ~ .checkmark {
+    background-color: hsl(289, 100%, 74%);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .time1 input:checked ~ .checkmark {
+    background-color: #ffffff;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+.dollar1{
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    padding-right: 10px;
+
+    transform: translateY(-20%);
+}
+
+.price2{
+    border-radius: 13px 13px 13px 5px;
+    margin: 10px 50px 0 10px;
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%) , hsl(293, 100%, 63%));
+    color: hsl(0, 0%, 100%);
+    font-size: 10px;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    width: 190px;
+}
+
+.dollar2{
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    padding-right: 10px;
+
+    transform: translateY(-20%);
+}
+
+
+.typemsg{
+    width: 270px;
+    border-radius: 50px 50px;
+    margin: 20px 50px 0 10px;
+    background-color: #fff;
+    color: hsl(206, 6%, 79%);
+    font-size: 10px;
+    float:left;
+
+    padding: 5px 5px 5px 15px;
+
+    position: relative;
+}
+
+.typem{
+    padding-left: 5px;
+    float: left;
+}
+
+.circle {
+    
+    height: 30px;
+    width: 30px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    right: 6px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrowright {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrowmsg{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.attribution { 
+    font-size: 15px; 
+    font-weight: 500;
+    text-align: center; 
+    padding-top: 80px;
+    color: rgb(126, 126, 126);
+}
+.attribution a { 
+    color: hsl(271, 36%, 24%); 
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media(max-width:1470px) {
+
+    .heading-parag{
+        width: 500px;
+    }
+
+    .container{
+        margin-left: 200px;
+    }
+
+    .container2{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width:1470px) {
+
+    .mcontainer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+
+    .container{
+        flex: 50%;
+        margin: 70px auto;
+        
+    }
+
+    .container2{
+        padding: 10px 50px 30px 50px;
+        flex: 50%;
+        margin: 20px 0;
+        width: 80%
+    }
+
+    .heading{
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    .heading-parag{
+        padding-top: 40px;
+        width: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+    .bg-box1{
+        top: -200px;
+        left: -310px;
+    }
+
+    .bg-box2{
+        width: 350px;
+        height: 800px;
+        position: absolute;
+        background-color: hsl(273, 53%, 97%);
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        border-radius: 300px 0 0 0;
+    }
+}
+
